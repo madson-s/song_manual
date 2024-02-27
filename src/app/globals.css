@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+.kranky-regular {
+  font-family: "Kranky", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -26,11 +32,25 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+.title{
+  font-size: 50px;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+.seta{
+  cursor: pointer;
+}
+
 .flip-book {
-  width: 25%;
+  width: 250px;
   height: 50vh;
   position: relative;
   perspective: 3000px;
+  margin-left: 200px;
+  -webkit-box-shadow: 0px 17px 6px -6px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 17px 6px -6px rgba(0,0,0,0.75);
+  box-shadow: 0px 14px 6px -6px rgba(0,0,0,0.75);
 }
 
 .flip {
@@ -44,6 +64,9 @@ body {
   transform: rotateY(0);
   transition: 1.5s;
   color: #000;
+  -webkit-box-shadow: 0px 17px 6px -6px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 17px 6px -6px rgba(0,0,0,0.75);
+  box-shadow: 0px 14px 6px -6px rgba(0,0,0,0.75);
 }
 
 .back {
@@ -53,10 +76,13 @@ body {
   top: 0;
   left: 0;
   z-index: 2;
+  border: 1px solid #000000;
   transform: rotateY(180deg);
   backface-visibility: hidden;
   border-radius: 10px 0 0 10px;
-
+  -webkit-box-shadow: 0px 17px 6px -6px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 17px 6px -6px rgba(0,0,0,0.75);
+  box-shadow: 0px 14px 6px -6px rgba(0,0,0,0.75);
 }
 
 .front {
@@ -66,12 +92,18 @@ body {
   top: 0;
   left: 0;
   border-radius: 0 10px 10px 0;
+  border: 1px solid #000000;
+  
 }
 
 .first {
   transform: rotateY(180deg);
   z-index: 1;
   border-radius: 10px 0 0 10px;
+  border: 1px solid #000000;
+  -webkit-box-shadow: 0px 17px 19px -6px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 17px 19px -6px rgba(0,0,0,0.75);
+  box-shadow: 0px 14px 19px -6px rgba(0,0,0,0.75);
 }
 
 .fliped {
