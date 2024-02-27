@@ -54,7 +54,7 @@ export default function Home() {
           </div>
           <div className="back bg-gray-400">
             <span>7</span>
-            <h3 className="ps-5 mt-1">A</h3>
+            <h3 className="ps-5 mt-1">O SOM DA LETRA P</h3>
             <p className="p-5">Olha lá, seu Sarafim<br />Esta letrinha faz assim <br />Com a ela faz pa <br />Com e ela faz pe <br /> Com i ela faz pi <br />Com o ela faz po <br /> 
             Com u ela faz pu <br /> Pa pe pi po pu <br /> Pa pe pi po pu</p>
           </div>
