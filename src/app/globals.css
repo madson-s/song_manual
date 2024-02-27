@@ -71,6 +71,7 @@ body {
 .first {
   transform: rotateY(180deg);
   z-index: 1;
+  border-radius: 10px 0 0 10px;
 }
 
 .fliped {
