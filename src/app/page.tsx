@@ -28,65 +28,56 @@ export default function Home() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-900 kranky-regular text-white">
+    <div className="min-h-screen bg-gray-900 kranky-regular">
       <Title />
       <main className="flex justify-between items-center">
       <Image src={SetaEsquerda} alt="Seta Esquerda" className="seta" onClick={handleClickReturn}></Image>
         <div className="flip-book">
           <div className="flip fliped">
             <div className="front first bg-green-500 border-t-[3px] border-green-400">
-              <span className="">1</span>
-              <h3 className="text-center mt-1 text-black-100">AO CHEGAR NA MINHA ESCOLA</h3>
-              <p className="p-5">Ao chegar na minha escola <br />Meu bom dia vou contar <br />Meu bom bom dia caro mestre <br />Vamos todos trabalhar <br />Ao chegar na minha escola <br />Meu bom dia vou contar <br />Aos queridos coleguinhos <br />Desta fâmia salutar.</p>
+              <h3 className="text-center mt-5 text-white">AO CHEGAR NA MINHA ESCOLA</h3>
+              <p className="p-5 text-white">Ao chegar na minha escola <br />Meu bom dia vou contar <br />Meu bom bom dia caro mestre <br />Vamos todos trabalhar <br />Ao chegar na minha escola <br />Meu bom dia vou contar <br />Aos queridos coleguinhos <br />Desta fâmia salutar.</p>
             </div>
           </div>
           <div className={currentPage === 2 ? "flip" : "flip fliped"} style={currentPage === 2 ? {zIndex : (value + 2).toString()} : {zIndex: (value - 2).toString()}}>
-            <div className="front bg-green-500 border-t-[3px] border-t-green-400 border-green-200">
-              <span>2</span>
+            <div className="front front_image bg-green-500 border-t-[3px] border-t-green-400 border-green-200">
               <Image src={Escola} alt="Escola"></Image>
             </div>
             <div className="back bg-blue-500 border-blue-200">
-              <span>3</span>
-              <h3 className="text-center mt-1 text-black-100">BE-A-BA</h3>
-              <p className="p-5">O ba-be-bi-bo-bu <br />Vamos todos aprender <br />Soletrando o be-a-ba <br />Uma das letras do ABC<br />O b é uma das letras <br />Que se encontra no ABC <br />Luis você não sabe <br />Quanto eu gosto de você</p>
+              <h3 className="text-center mt-5 text-white">BE-A-BA</h3>
+              <p className="p-5 text-white">O ba-be-bi-bo-bu <br />Vamos todos aprender <br />Soletrando o be-a-ba <br />Uma das letras do ABC<br />O b é uma das letras <br />Que se encontra no ABC <br />Luis você não sabe <br />Quanto eu gosto de você</p>
             </div>
           </div>
           <div className={currentPage <= 3 ? "flip" : "flip fliped"} style={currentPage <= 3 ? {zIndex : (value - 3).toString()} : {zIndex: (value + 3).toString()}}>
-            <div className="front bg-blue-500">
-              <span>4</span>
+            <div className="front_image bg-blue-500">
               <Image src={BeABa} alt="BeABa"></Image>
             </div>
             <div className="back bg-teal-400">
-              <span>5</span>
-              <h3 className="text-center mt-1 text-black-100">A</h3>
-              <p className="p-5">A Ana tem uma trança<br />Muito fácil de trançar <br />Ela põe um lindo laço <br />E vai contente passear</p>
+              <h3 className="text-center mt-5 text-white">A</h3>
+              <p className="p-5 text-white">A Ana tem uma trança<br />Muito fácil de trançar <br />Ela põe um lindo laço <br />E vai contente passear</p>
             </div>
           </div>
           <div className={currentPage <= 4 ? "flip" : "flip fliped"} style={currentPage <= 4 ? {zIndex : (value - 4).toString()} : {zIndex: (value + 4).toString()}}>
-            <div className="front bg-teal-400">
-              <span>6</span>
+            <div className="front_image bg-teal-400">
               <Image src={A} alt="BeABa"></Image>
             </div>
             <div className="back bg-gray-400">
-              <span>7</span>
-              <h3 className="text-center mt-1 text-black-100">O SOM DA LETRA P</h3>
-              <p className="p-5">Olha lá, seu Sarafim<br />Esta letrinha faz assim <br />Com a ela faz pa <br />Com e ela faz pe <br /> Com i ela faz pi <br />Com o ela faz po <br /> 
+              <h3 className="text-center mt-5 text-white">O SOM DA LETRA P</h3>
+              <p className="p-5 text-white">Olha lá, seu Sarafim<br />Esta letrinha faz assim <br />Com a ela faz pa <br />Com e ela faz pe <br /> Com i ela faz pi <br />Com o ela faz po <br /> 
               Com u ela faz pu <br /> Pa pe pi po pu <br /> Pa pe pi po pu</p>
             </div>
           </div>
           <div className={currentPage <= 5 ? "flip" : "flip fliped"} style={currentPage <= 5 ? {zIndex : (value - 5).toString()} : {zIndex: (value + 5).toString()}}>
-            <div className="front bg-gray-400">
-              <span>8</span>
+            <div className="front_image bg-gray-400">
               <Image src={SomDoP} alt="SomDoP"></Image>
             </div>
             <div className="back bg-pink-400">
-              <span>9</span>
-              <h3 className="text-center mt-1 text-black-100">Maninha</h3>
-              <p className="p-5">Vamos maninha, vamos<br />Juntinhos escrever <br />As palavras e as frases <br />Para a meninada ler</p>
+              <h3 className="text-center mt-5 text-white">Maninha</h3>
+              <p className="p-5 text-white">Vamos maninha, vamos<br />Juntinhos escrever <br />As palavras e as frases <br />Para a meninada ler</p>
             </div>
           </div>
           <div className="flip">
-            <div className="front bg-pink-400">10
+            <div className="front_image bg-pink-400">
               <Image src={Maninha} alt="A"></Image>
             </div>
           </div>
