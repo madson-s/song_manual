@@ -8,6 +8,8 @@ import SomDoP from './assets/Fabula4.png';
 import Maninha from './assets/Fabula5.png';
 import SetaDireita from './assets/seta-direita.png';
 import SetaEsquerda from './assets/seta-esquerda.png';
+import Page from "./components/page";
+import Title from "./components/title";
 
 export default function Home() {
   const [currentPage, setCurrentPage] = useState(3);
@@ -26,31 +28,31 @@ export default function Home() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-800 kranky-regular">
-      <h1 className="title text-center pt-16">Manual de cantigas tradicionais</h1>
-      <main className="flex justify-center items-center">
-      <Image src={SetaEsquerda} alt="Seta Esquerda" className="me-16 seta" onClick={handleClickReturn}></Image>
+    <div className="min-h-screen bg-gray-900 kranky-regular text-white">
+      <Title />
+      <main className="flex justify-between items-center">
+      <Image src={SetaEsquerda} alt="Seta Esquerda" className="seta" onClick={handleClickReturn}></Image>
         <div className="flip-book">
           <div className="flip fliped">
-            <div className="front first bg-green-400">
+            <div className="front first bg-green-500 border-t-[3px] border-green-400">
               <span className="">1</span>
               <h3 className="text-center mt-1 text-black-100">AO CHEGAR NA MINHA ESCOLA</h3>
               <p className="p-5">Ao chegar na minha escola <br />Meu bom dia vou contar <br />Meu bom bom dia caro mestre <br />Vamos todos trabalhar <br />Ao chegar na minha escola <br />Meu bom dia vou contar <br />Aos queridos coleguinhos <br />Desta fâmia salutar.</p>
             </div>
           </div>
           <div className={currentPage === 2 ? "flip" : "flip fliped"} style={currentPage === 2 ? {zIndex : (value + 2).toString()} : {zIndex: (value - 2).toString()}}>
-            <div className="front bg-green-400">
+            <div className="front bg-green-500 border-t-[3px] border-t-green-400 border-green-200">
               <span>2</span>
               <Image src={Escola} alt="Escola"></Image>
             </div>
-            <div className="back bg-blue-400">
+            <div className="back bg-blue-500 border-blue-200">
               <span>3</span>
               <h3 className="text-center mt-1 text-black-100">BE-A-BA</h3>
               <p className="p-5">O ba-be-bi-bo-bu <br />Vamos todos aprender <br />Soletrando o be-a-ba <br />Uma das letras do ABC<br />O b é uma das letras <br />Que se encontra no ABC <br />Luis você não sabe <br />Quanto eu gosto de você</p>
             </div>
           </div>
           <div className={currentPage <= 3 ? "flip" : "flip fliped"} style={currentPage <= 3 ? {zIndex : (value - 3).toString()} : {zIndex: (value + 3).toString()}}>
-            <div className="front bg-blue-400">
+            <div className="front bg-blue-500">
               <span>4</span>
               <Image src={BeABa} alt="BeABa"></Image>
             </div>
@@ -90,7 +92,7 @@ export default function Home() {
           </div>
         </div>
         {/* <button onClick={handleClick} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-3">toggle</button>  */}
-        <Image src={SetaDireita} alt="Seta Direita" className="ms-3 seta" onClick={handleClick}></Image>
+        <Image src={SetaDireita} alt="Seta Direita" className="seta" onClick={handleClick}></Image>
       </main>
     </div>
   );
