@@ -1,15 +1,17 @@
 "use client"
 import {useState } from "react";
 import Image from "next/image";
-import Escola from './assets/Fabula1.png';
-import BeABa from './assets/Fabula2.png';
-import A from './assets/Fabula3.png';
-import SomDoP from './assets/Fabula4.png';
-import Maninha from './assets/Fabula5.png';
 import SetaDireita from './assets/seta-direita.png';
 import Arrow from './assets/arrow.png';
 import Page from "./components/page";
 import Title from "./components/title";
+import Escola from "./assets/Fabula1.png";
+import BeABa from "./assets/Fabula2.png";
+import A from "./assets/Fabula3.png";
+import SomDoP from "./assets/Fabula4.png";
+import Maninha from "./assets/Fabula5.png";
+
+
 
 export default function Home() {
   const [currentPage, setCurrentPage] = useState(3);
@@ -52,7 +54,7 @@ export default function Home() {
             <div className="front_image bg-blue-500">
               <Image src={BeABa} alt="BeABa"></Image>
             </div>
-            <div className="back bg-teal-400">
+            <div className="back bg-ligh-400">
               <h3 className="text-center mt-5 text-white">A</h3>
               <p className="p-5 text-white">A Ana tem uma trança<br />Muito fácil de trançar <br />Ela põe um lindo laço <br />E vai contente passear</p>
             </div>
