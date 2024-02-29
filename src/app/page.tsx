@@ -7,7 +7,7 @@ import A from './assets/Fabula3.png';
 import SomDoP from './assets/Fabula4.png';
 import Maninha from './assets/Fabula5.png';
 import SetaDireita from './assets/seta-direita.png';
-import SetaEsquerda from './assets/seta-esquerda.png';
+import Arrow from './assets/arrow.png';
 import Page from "./components/page";
 import Title from "./components/title";
 
@@ -31,7 +31,7 @@ export default function Home() {
     <div className="min-h-screen bg-gray-900 kranky-regular">
       <Title />
       <main className="flex justify-between items-center">
-      <Image src={SetaEsquerda} alt="Seta Esquerda" className="seta" onClick={handleClickReturn}></Image>
+      <Image src={Arrow} width={20} alt="Seta Esquerda" className="seta rotate-90" onClick={handleClickReturn}></Image>
         <div className="flip-book">
           <div className="flip fliped">
             <div className="front first bg-green-500 border-t-[3px] border-green-400">
@@ -83,7 +83,7 @@ export default function Home() {
           </div>
         </div>
         {/* <button onClick={handleClick} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-3">toggle</button>  */}
-        <Image src={SetaDireita} alt="Seta Direita" className="seta" onClick={handleClick}></Image>
+        <Image src={Arrow} width={20} alt="Seta Direita" className="seta -rotate-90" onClick={handleClick}></Image>
       </main>
     </div>
   );
