@@ -1,4 +1,5 @@
 import { Kranky } from "next/font/google";
+import React from "react";
 
 const kranky = Kranky({ weight: "400", subsets: ["latin"] });
 

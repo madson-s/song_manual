@@ -131,18 +131,6 @@ div .front_image{
   border-right-width: 0;
 }
 
-.circle_arrow{
-  border-radius: 50%;
-  cursor: pointer;
-  height: 50px;
-  width: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 15px;
-  transition: .5s;
-}
-
 .circle_arrow:hover{
   background-color: #dadada11;
 }

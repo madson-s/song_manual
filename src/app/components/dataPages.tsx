@@ -14,7 +14,7 @@ export default function DataPages({currentPage}: DataPagesProps){
         return(
             <>
                 {dataSet.map((item, index) => (
-                    <>
+                    <div key={index}>
                         <div 
                             key={index} 
                             className={currentPage <= index + 2 ? "flip" : "flip fliped"} 
@@ -26,7 +26,7 @@ export default function DataPages({currentPage}: DataPagesProps){
                                 <p dangerouslySetInnerHTML={{ __html: dataSet[index+1] ? dataSet[index+1].song.lyrics : '' }} className="text-white"></p>
                             </div>
                         </div>
-                    </>
+                    </div>
                 ))}
             </>
         )

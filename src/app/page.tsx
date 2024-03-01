@@ -3,7 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { Arrow } from "./components/Arrow";
 import ArrowLeft from "./assets/arrowLeft.png";
-import Title from "./components/Title";
+import Title from "./components/title";
 import DataPages from "./components/dataPages";
 
 export default function Home() {
@@ -26,14 +26,8 @@ export default function Home() {
     <div className="min-h-screen bg-gray-900 kranky-regular">
       <Title />
       <main className="flex justify-between items-center">
-        <div className="circle_arrow">
-          <Image
-            src={ArrowLeft}
-            width={35}
-            alt="Seta Esquerda"
-            className="setaE"
-            onClick={handleClickReturn}
-          ></Image>
+        <div>
+          <Arrow direction="left" alt="anterior" onClick={handleClickReturn}/>
         </div>
         <div className="flip-book">
           <div className="flip fliped">
