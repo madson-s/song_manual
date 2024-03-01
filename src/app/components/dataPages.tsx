@@ -8,7 +8,7 @@ interface DataPagesProps {
 
 export default function DataPages({currentPage}: DataPagesProps){
 
-    const value = 100;
+    const value = 5;
 
     const searchData = () => {
         return(
@@ -32,9 +32,5 @@ export default function DataPages({currentPage}: DataPagesProps){
         )
     }
     
-    return(
-        <div>
-            {searchData()}
-        </div>
-    )
+    return searchData()
 }
