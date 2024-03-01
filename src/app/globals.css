@@ -111,6 +111,7 @@ div .front_image{
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .back h3, .back p, .front h3, .front p{
@@ -144,6 +145,21 @@ div .front_image{
 
 .circle_arrow:hover{
   background-color: #dadada11;
+}
+
+.image_front{
+  min-height: 190px;
+}
+
+iframe{
+  height: 130px;
+  width: 350px;
+  margin: 15px 0;
+}
+
+.audio{
+  margin-bottom: 30px;
+  cursor: pointer;
 }
 
 @layer utilities {

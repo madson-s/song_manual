@@ -4,7 +4,6 @@ import A from "./assets/Fabula3.png";
 import SomDoP from "./assets/Fabula4.png";
 import Maninha from "./assets/Fabula5.png";
 
-
 export const dataSet = [
   {
     image: {
@@ -17,6 +16,8 @@ export const dataSet = [
         "Ao chegar na minha escola <br />Meu bom dia vou contar <br />Meu bom bom dia caro mestre <br />Vamos todos trabalhar <br />Ao chegar na minha escola <br />Meu bom dia vou contar <br />Aos queridos coleguinhos <br />Desta fâmia salutar.",
     },
     color: "lime",
+    video: '',
+    audio: ''
   },
 
   {
@@ -30,6 +31,8 @@ export const dataSet = [
         "O ba-be-bi-bo-bu <br />Vamos todos aprender <br />Soletrando o be-a-ba <br />Uma das letras do ABC<br />O b é uma das letras <br />Que se encontra no ABC <br />Luis você não sabe <br />Quanto eu gosto de você",
     },
     color: "teal",
+    video: 'https://www.youtube.com/watch?v=dvpJxW8iqCc',
+    audio: 'opa'
   },
 
   {
@@ -43,6 +46,8 @@ export const dataSet = [
         "A Ana tem uma trança<br />Muito fácil de trançar <br />Ela põe um lindo laço <br />E vai contente passear",
     },
     color: "violet",
+    video: '',
+    audio: 'oiiii'
   },
 
   {
@@ -56,6 +61,8 @@ export const dataSet = [
         "Olha lá, seu Sarafim<br />Esta letrinha faz assim <br />Com a ela faz pa <br />Com e ela faz pe <br /> Com i ela faz pi <br />Com o ela faz po <br /> Com u ela faz pu <br /> Pa pe pi po pu <br /> Pa pe pi po pu",
     },
     color: "blue",
+    video: 'https://www.youtube.com/watch?v=xT8HIiFQ8Y0',
+    audio: ''
   },
 
   {
@@ -69,5 +76,7 @@ export const dataSet = [
         "Vamos maninha, vamos<br />Juntinhos escrever <br />As palavras e as frases <br />Para a meninada ler",
     },
     color: "cyan",
+    video: '',
+    audio: ''
   },
 ];
