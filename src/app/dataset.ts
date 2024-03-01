@@ -29,7 +29,7 @@ export const dataSet = [
       lyrics:
         "O ba-be-bi-bo-bu <br />Vamos todos aprender <br />Soletrando o be-a-ba <br />Uma das letras do ABC<br />O b é uma das letras <br />Que se encontra no ABC <br />Luis você não sabe <br />Quanto eu gosto de você",
     },
-    color: "green",
+    color: "teal",
   },
 
   {
@@ -42,7 +42,7 @@ export const dataSet = [
       lyrics:
         "A Ana tem uma trança<br />Muito fácil de trançar <br />Ela põe um lindo laço <br />E vai contente passear",
     },
-    color: "emerald",
+    color: "violet",
   },
 
   {
@@ -55,7 +55,7 @@ export const dataSet = [
       lyrics:
         "Olha lá, seu Sarafim<br />Esta letrinha faz assim <br />Com a ela faz pa <br />Com e ela faz pe <br /> Com i ela faz pi <br />Com o ela faz po <br /> Com u ela faz pu <br /> Pa pe pi po pu <br /> Pa pe pi po pu",
     },
-    color: "teal",
+    color: "blue",
   },
 
   {
